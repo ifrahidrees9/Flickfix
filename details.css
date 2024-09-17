@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2e4e6;
+  font-family: "Poppins", sans-serif;
+}
+
+.book {
+  width: 93%;
+  height: 90%;
+  display: flex;
+}
+
+.book .left,
+.right {
+  width: 80%;
+  position: relative;
+  height: 100%;
+  /* border: 1px solid #fff; */
+}
+
+.book .left {
+  position: relative;
+  width: 20%;
+  background: white;
+}
+
+.book-now-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #521b59; /* Adjust the color */
+  color: white;
+  border: none;
+  border-radius: 0; /* Remove border radius for full-width button */
+  cursor: pointer;
+  text-align: center; /* Center text within the button */
+  text-decoration: none;
+}
+
+.book-now-btn:hover {
+  background-color: #781e8d; /* Hover effect */
+}
+
+.book .left img {
+  width: 100%;
+  height: 280px;
+}
+
+.book .left .cont {
+  color: black;
+  padding: 5px 20px;
+}
+
+.book .left .cont h6 {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.book .left .cont p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.book .right {
+  padding: 0px 0px 0px 30px;
+}
+
+.book .right iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  #header-placeholder {
+    height: 85px;
+  }
+  .main {
+    margin-top: -30px;
+
+    width: 100%;
+    height: 120vh;
+    display: flex;
+  }
+
+  .book {
+    flex-direction: column-reverse;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    padding: 0px 15px;
+  }
+
+  .book .left,
+  .right {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+  .book .right {
+    padding: 0;
+    margin-bottom: 5px;
+    height: 500px;
+  }
+  .book .right iframe {
+    margin-top: -20px;
+  }
+
+  .book .left {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: -20px;
+    margin-top: -10px;
+  }
+
+  .book .left img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .book .left .cont {
+    padding: 8px 20px;
+    height: 220px;
+  }
+
+  .book .left .cont h6 {
+    font-size: 17px;
+  }
+  .book .left .cont p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
