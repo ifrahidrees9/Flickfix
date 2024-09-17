@@ -98,7 +98,7 @@ h2 {
   .main h1 {
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
-    line-height: 1.2;
+    line-height: 1.4;
   }
   .container {
     grid-template-columns: 1fr; /* 1 column for mobile */
