@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  text-align: center;
+  margin: 0px;
+  padding: 40px 50px 40px;
+  background-color: #f2e4e6;
+}
+
+.main h1 {
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+}
+.container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-items: center; /* Center content inside grid items */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.image-container {
+  width: 100%;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-now-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #521b59; /* Shadow color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px 0px 5px 5px;
+}
+.book-now-btn:hover {
+  background-color: #781e8d; /* Hover effect */
+}
+h2 {
+  margin-top: 9px;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: 550;
+
+  font-family: sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .main {
+    padding: 25px 10px 10px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .main h1 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+
+    padding: 30px 10px 35px;
+  }
+
+  .box {
+    margin-bottom: -19px;
+    width: 300px;
+  }
+
+  .image-container {
+    height: 400px;
+  }
+
+  .image-container img {
+    border-radius: 5px;
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .book-now-btn {
+    padding: 14px 10px;
+    width: 95%;
+    margin-left: 8px;
+  
+  }
+
+  .box h2 {
+    font-size: 21px;
+    font-weight: 550;
+  }
+}
